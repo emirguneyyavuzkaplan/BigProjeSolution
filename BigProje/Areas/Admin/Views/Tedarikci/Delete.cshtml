@@ -1,0 +1,33 @@
+﻿@model Tedarikci
+
+<form asp-controller="Tedarikci" asp-action="Delete" method="post">
+    <div class="mb-3">
+        <label asp-for="Ad" class="form-label">@Model.Ad</label>
+        <input type="text" class="form-control" asp-for="Ad" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Soyad" class="form-label">@Model.Soyad</label>
+        <input type="text" class="form-control" asp-for="Soyad" readonly>
+    </div>
+
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="Gsm" class="form-label">@Model.Gsm</label>
+        <input type="text" class="form-control" asp-for="Gsm" readonly>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">@Model.Email</label>
+        <input type="text" class="form-control" asp-for="Email" readonly>
+
+    </div>
+
+    
+
+    <button type="submit" class="btn btn-danger">Sil</button>
+
+    <a class="btn btn-info" asp-action="Index" asp-controller="Tedarikci">Listeye Geri Dön</a>
+
+
+</form>

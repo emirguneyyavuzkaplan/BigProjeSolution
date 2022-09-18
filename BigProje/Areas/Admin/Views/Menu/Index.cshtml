@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Menu>
+
+
+<a class="btn btn-primary" asp-controller="Menu" asp-action="Create"> Menu</a>
+<table class="table table-hover">
+    <thead>
+        <tr>
+          
+            <td>@Html.DisplayNameFor(p=>p.Id)</td>
+            <td>@Html.DisplayNameFor(p=>p.MenuAdi)</td>
+            <td>@Html.DisplayNameFor(p=>p.Fiyat)</td>
+            <td>@Html.DisplayNameFor(p=>p.Acıklama)</td>
+            
+          
+            <td></td>
+        </tr>
+    </thead>
+    <tbody> 
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.MenuAdi</td>
+                <td>@item.Fiyat</td>
+                <td>@item.Acıklama</td>
+                
+             
+                <td>
+                    <a class="btn btn-danger" asp-action="Delete" asp-controller="Menu" asp-route-id="@item.Id">Sil</a>
+                    <a class="btn btn-info" asp-action="Update" asp-controller="Menu" asp-route-id="@item.Id">Güncelle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+

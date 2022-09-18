@@ -1,0 +1,58 @@
+﻿@model Yemekler
+
+
+<form asp-controller="Yemekler" asp-action="Create" method="post">
+
+    <div class="mb-3">
+        <label asp-for="YemekAdi" class="form-label">YemekAdi</label>
+        <input type="text" class="form-control" asp-for="YemekAdi">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Aciklama" class="form-label">Aciklama</label>
+        <input type="text" class="form-control" asp-for="Aciklama">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Aşcı" class="form-label">Aşcı</label>
+        <input type="text" class="form-control" asp-for="Aşcı">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TeknikOzellikler" class="form-label">TeknikOzellikler</label>
+        <input type="text" class="form-control" asp-for="TeknikOzellikler">
+    </div>
+
+   
+
+    <div class="mb-3">
+        <label asp-for="Malzemeler" class="form-label">Teknik Malzemeler</label>
+        <input type="text" class="form-control" asp-for="Malzemeler">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Tedarikci" class="form-label">Tedarikci </label>
+        <input type="text" class="form-control" asp-for="Tedarikci">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Fiyat" class="form-label">Fiyat</label>
+        <input type="text" class="form-control" asp-for="Fiyat">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="KategoriAdi" class="form-label">KategoriAdi</label>
+        <input type="text" class="form-control" asp-for="KategoriAdi">
+    </div>
+
+    
+
+    <div class="mb-3">
+        <label asp-for="BarkodNo" class="form-label">Barkod No</label>
+        <input type="text" class="form-control" asp-for="BarkodNo">
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+    <a class="btn btn-info" asp-action="Index" asp-controller="Yemekler">Listeye Geri Dön</a>
+
+</form>

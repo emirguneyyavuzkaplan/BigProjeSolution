@@ -1,0 +1,24 @@
+﻿@model Kargo
+
+
+<form asp-controller="Kargo" asp-action="Update" method="post">
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <div class="mb-3">
+        <label asp-for="KargoAdi" class="form-label">Kargo Adi</label>
+        <input type="text" class="form-control" asp-for="KargoAdi" value="@Model.KargoAdi">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="KargoTel" class="form-label">Kargo Tel</label>
+        <input type="text" class="form-control" asp-for="KargoTel" value="@Model.KargoTel">
+    </div>
+
+
+
+
+    <input type="submit" class="btn btn-primary" value="Kaydet" />
+
+    @* <a class="btn btn-success" asp-area="" asp-controller="Kategori" asp-action="Index">Listeye geri dön</a>*@
+    <a class="btn btn-info" asp-action="Index" asp-controller="Kargo">Listeye Geri Dön</a>
+
+</form>

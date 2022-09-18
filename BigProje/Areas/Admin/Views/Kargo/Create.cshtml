@@ -1,0 +1,21 @@
+﻿@model Kargo
+
+
+<form asp-controller="Kargo" asp-action="Create" method="post">
+
+    <div class="mb-3">
+        <label asp-for="KargoAdi" class="form-label">Kargo Adi</label>
+        <input type="text" class="form-control" asp-for="KargoAdi">
+    </div>
+    <div class="mb-3">
+        <label asp-for="KargoTel" class="form-label">Kargo Tel</label>
+        <input type="text" class="form-control" asp-for="KargoTel">
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+    <a class="btn btn-info" asp-action="Index" asp-controller="Kargo">Listeye Geri Dön</a>
+
+</form>

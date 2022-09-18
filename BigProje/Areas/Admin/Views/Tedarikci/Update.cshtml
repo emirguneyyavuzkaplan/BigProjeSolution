@@ -1,0 +1,29 @@
+﻿@model Tedarikci
+
+
+<form asp-controller="Tedarikci" asp-action="Update" method="post">
+   
+    <div class="mb-3">
+      <label asp-for="Ad" class="form-label">Tedarikci Adi</label>
+      <input type="text" class="form-control" asp-for="Ad">
+    </div>
+    <div class="mb-3">
+      <label asp-for="Soyad" class="form-label">Tedarikci Soyadi</label>
+      <input type="text" class="form-control" asp-for="Soyad">
+    </div>
+    <div class="mb-3">
+      <label asp-for="Gsm" class="form-label">Gsm</label>
+      <input type="text" class="form-control" asp-for="Gsm">
+    </div>
+    <div class="mb-3">
+      <label asp-for="Email" class="form-label">Email</label>
+      <input type="text" class="form-control" asp-for="Email">
+    </div>
+   
+   
+
+     <button type="submit" class="btn btn-primary">Kaydet</button>
+   
+    <a class="btn btn-info" asp-action="Index" asp-controller="Tedarikci">Listeye Geri Dön</a>
+
+    </form>

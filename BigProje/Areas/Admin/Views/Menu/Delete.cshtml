@@ -1,0 +1,29 @@
+﻿@model Menu
+
+
+<form asp-controller="Menu" asp-action="Delete" method="post">
+
+    <div class="mb-3">
+        <label asp-for="MenuAdi" class="form-label">MenuAdi</label>
+        <input type="text" class="form-control" asp-for="MenuAdi">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Acıklama" class="form-label">Acıklama</label>
+        <input type="text" class="form-control" asp-for="Acıklama">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Fiyat" class="form-label">Fiyat</label>
+        <input type="text" class="form-control" asp-for="Fiyat">
+    </div>
+
+    
+
+
+
+    <button type="submit" class="btn btn-danger">Sil</button>
+
+    <a class="btn btn-info" asp-action="Index" asp-controller="Menu">Listeye Geri Dön</a>
+
+</form>

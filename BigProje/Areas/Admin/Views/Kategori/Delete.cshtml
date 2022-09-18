@@ -1,0 +1,24 @@
+﻿@model Kategori
+
+<form asp-controller="Kategori" asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="KategoriAdi" class="form-label">@Model.KategoriAdi</label>
+        <input type="text" class="form-control" asp-for="KategoriAdi" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Acıklama" class="form-label">@Model.Acıklama</label>
+        <input type="text" class="form-control" asp-for="Acıklama" readonly>
+    </div>
+
+
+    <button type="submit" class="btn btn-danger">Sil</button>
+
+    <a class="btn btn-primary" asp-action="Index" asp-controller="Kategori">Listeye Geri Dön</a>
+
+
+
+
+</form>
