@@ -25,8 +25,8 @@ namespace BigProje.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            YemeklerKategori filmlerkategori = new();
-            return View(filmlerkategori);
+            YemeklerKategori yemeklerkategori = new();
+            return View(yemeklerkategori);
         }
 
         [HttpPost]

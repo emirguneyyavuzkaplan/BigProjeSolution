@@ -13,8 +13,7 @@ namespace BigProje.Areas.Admin.Controllers
 
 
 
-        // AspNetUsers Tablosunun manager sinifidir. 
-        // Kisaca user'lari yöneten siniftir.
+       
         private readonly UserManager<AppUser> userManager;
         private readonly SignInManager<AppUser> signInManager;
         private readonly IPasswordHasher<AppUser> passwordHasher;
